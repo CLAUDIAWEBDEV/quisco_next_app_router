@@ -14,7 +14,7 @@ export default function OrderPage() {
     const url = '/admin/orders/api'
     //Funcion que obtiene datos de la Api
     const fetcher = () => fetch(url).then(res => res.json()).then(data => data)
-    const { data, error, isLoading } = useSWR<OrderWithProducts[]>(url, fetcher, {
+    const { data, isLoading } = useSWR<OrderWithProducts[]>(url, fetcher, {
         //Carga despues del minuto 
         refreshInterval: 60000,
         //“No vuelvas a hacer el fetch automáticamente cuando el usuario regrese a la pestaña”

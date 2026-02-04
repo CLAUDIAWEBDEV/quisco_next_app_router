@@ -1,13 +1,11 @@
 "use client"
 import { useStore } from "@/src/store"
 import ProductDetails from "./ProductDetails"
-import { products } from "@/prisma/data/products"
 import { formatCurrency } from "@/src/utils"
 import { useMemo } from "react"
 import { createOrder } from "@/actions/create-order-action"
 import { OrderSchema } from "@/src/schema"
 import { toast } from "react-toastify"
-import { clear } from "console"
 
 
 export default function OrderSummary() {

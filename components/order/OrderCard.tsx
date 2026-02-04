@@ -1,5 +1,4 @@
 import { completeOrder } from "@/actions/complete-order-action"
-import { products } from "@/prisma/data/products"
 import { OrderWithProducts } from "@/src/types"
 import { formatCurrency } from "@/src/utils"
 

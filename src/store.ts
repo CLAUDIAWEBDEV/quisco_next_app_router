@@ -18,7 +18,7 @@ export const useStore = create<Store>((set, get) => ({
     //Agregar producto al carrito
     addToOrder: (product) => {
         //Desestructuración de objetos
-        const { categoryId, image, ...data } = product 
+        const {...data } = product 
         let order: OrderItem[] = []
         if (get().order.find(item => item.id === product.id)) {
             order = get().order.map(item => item.id === product.id ? {

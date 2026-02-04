@@ -1,5 +1,4 @@
 import { ProductsWithCategory } from "@/app/admin/products/page"
-import { Category, Product } from "@/src/generated/prisma"
 import { formatCurrency } from "@/src/utils"
 import Link from "next/link"
 

@@ -2,7 +2,6 @@
 
 import { Product } from "@/src/generated/prisma"
 import { useStore } from "@/src/store"
-import { addAbortListener } from "events"
 
 export type AddProductButtonProps = {
     product: Product
