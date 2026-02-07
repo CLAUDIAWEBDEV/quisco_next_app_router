@@ -11,7 +11,8 @@ generator client {
 
 datasource db {
   provider = "postgresql"
- // url      = env("DATABASE_URL")
+  
+ url      = env("DATABASE_URL")
 }
 
 //Una categoria tiene muchos productos
@@ -43,7 +44,7 @@ model Order {
   date          DateTime        @default(now())
   status        Boolean         @default(false)
   orderReadyAt  DateTime?
-//Relacion inversa: una order tiene muchos productos
+  //Relacion inversa: una order tiene muchos productos
   orderProducts OrderProducts[]
 }
 
