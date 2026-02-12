@@ -2,6 +2,7 @@
 
 import { prisma } from "@/src/lib/prisma";
 
+//Para que los endpoind sean dinamicos y no sean estaticos
 export const dynamic = 'force-dynamic'
 
 export async function GET() {
